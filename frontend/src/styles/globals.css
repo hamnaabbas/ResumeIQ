@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+html,
+body {
+  @apply h-full bg-gray-50 text-gray-900;
+}
+
+body {
+  @apply antialiased;
+}
+
+a {
+  @apply text-primary hover:text-primary-dark transition-colors;
+}
+
+button {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+}
+
+input,
+textarea,
+select {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-primary;
+}
